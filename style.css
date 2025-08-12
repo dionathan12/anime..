@@ -1,0 +1,58 @@
+/* Resetando margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Estilo para as imagens pequenas */
+.small-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.small-images img {
+    width: 30%;
+    border: 3px solid #333;
+    border-radius: 8px;
+}
+
+/* Estilo para as imagens grandes */
+.large-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.large-images img {
+    width: 30%;
+    border: 3px solid #333;
+    border-radius: 8px;
+}
+
+/* Responsividade: Para telas menores */
+@media (max-width: 768px) {
+    .small-images, .large-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .small-images img, .large-images img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
